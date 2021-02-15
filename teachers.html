@@ -67,14 +67,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="title-column">
-                        <h4 class="custom-heading text-center">Title Lorem Test</h4>
+                        <h4 class="custom-heading text-center">Choose your teachers</h4>
                     </div>
                     <div class="description-paragraph">
                         <p class="text-center mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Recusandae soluta ex harum, laudantium quam illum iusto. 
-                            Accusantium dignissimos, est illo quaerat autem culpa quo 
-                            minus aperiam voluptate, velit sed aut?
+                            Learning has NO limitation, though your mobile or PC, you can book your private teacher and 
+                            start your interactive virtual class from your home .                        
                         </p>
                     </div>
                 </div>
@@ -92,7 +90,7 @@
         <div class="line"></div>
 
         
-        <div class="container">
+        <!-- <div class="container">
             <div class="small-description">
                 <p class="text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -102,7 +100,7 @@
                 </p>
             </div>
             <hr>
-        </div>
+        </div> -->
 
         <!-- Filter Teachers with categories -->
         <div class="container-fluid bg-color">
@@ -173,51 +171,85 @@
                     <form action="">
 
                         <div class="form-group form-check">
-                            <h6 class="cst-title">Years experience from :</h6>
+                            <h6 class="cst-title">Years experience :</h6>
                             <hr>
-                            <input type="range" class="form-check-input" id="">
-                            <label class="form-check-label" for="">5 years</label>
-                          </div>
+
+                            <p>
+                                <label for="experience">experience between:</label>
+                                <input type="text" id="experience" class="form-check-input" readonly>
+                            </p>
+                               
+                            <div id="slider-range"></div>
+
+                        </div>
+
                     </form>
                 </div>
+
                 <div class="col-lg-3 col-md-12">
                     <form action="">
                         <div class="form-group form-check">
                             <h6 class="cst-title">Rate per class 30 min :</h6>
                             <hr>
-                            <input type="range" class="form-check-input" id="">
-                            <label class="form-check-label" for="">25 Dollars</label>
-                          </div>
+                            <p>
+                                <label for="Price">Price class 30 min : </label>
+                                <input type="text" id="Price" class="form-check-input" readonly>
+                            </p>
+                               
+                            <div id="slider-range-one"></div>
+
+                        </div>
                     </form>
                 </div>
-                <div class="col-lg-3 col-md-12">
-                    <form action="">
-                        <div class="form-group">
-                            <label class="per-day" for="">Avilable by Per Day</label>
-                            <select class="form-control" id="">
-                              <option selected disabled>Filter Avilable by Day</option>
-                              <option>Monday</option>
-                              <option>Tuesday</option>
-                              <option>Wednesday</option>
-                              <option>Thursday</option>
-                              <option>Friday</option>
-                            </select>
-                          </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <form action="" class="form-inline">
+                        <h6 class="cst-title">
+                            Availability From and To :
+                        <hr>
+                        </h6>
+                        <div class="form-group From-To-Date">
+                            <p class="between">From : </p>
+                            <input type="date" class="form-control" name="" id="" placeholder="13/05/2020">
+                            <hr>
+                            <p class="between">To : </p>
+                            <input type="date" class="form-control" name="" id="" placeholder="15/5/2021">
+                        </div>
                     </form>
+
+                    <hr>
+
+                    <!-- Time From - To -->
+                    <form action="" class="form-inline" style="margin-top: -20px;">
+                        <div class="form-group From-To-Date From-to-time">
+                            <p class="between">From : </p>
+                            <input type="time" class="form-control" name="" id="" placeholder="14:30">
+                            <hr>
+                            <p class="between">To : </p>
+                            <input type="time" class="form-control" name="" id="" placeholder="15:00">
+                        </div>
+                    </form>
+
                 </div>
-                <div class="col-lg-3 col-md-12">
+            </div>
+            <!-- END Filter Teachers -->
+        </div>
+
+        <div class="container-fluid bg-color">
+            <!--  -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
                     <form action="">
                         <div class="form-group">
-                            <label for="">Click here to filter</label>
+                            <!-- <label for="">Click here to filter</label> -->
                             <button type="submit" class="btn filter-btn form-control">Filter Now</button>
                         </div>
                     </form>
                 </div>
             </div>
-            
-            <!-- END Filter Teachers -->
 
         </div>
+
         <!-- End Filter Teachers -->
 
         <div class="container">
@@ -869,6 +901,7 @@
     </section>
    <!-- End Choose a teacher -->
 
+
    <!-- Footer Page -->
    <footer class="latest-footer" id="latest-footer">
        <div class="container">
@@ -890,8 +923,9 @@
 
                    <div class="about-description">
                        <p class="text">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Magnam sit est voluptatem facilis ducimus necessitatibus.
+                        Mudarris.net is a premium Online Academy that seeks to provide the best in the 
+                        academic learning field, That brings the high-quality experience of private school 
+                        education to a user-friendly online environment.
                        </p>
                    </div>
 
